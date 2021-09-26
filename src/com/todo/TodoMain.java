@@ -67,6 +67,11 @@ public class TodoMain {
 			case "exit":
 				quit = true;
 				break;
+				
+			case "find": 
+				String keyword = sc.next(); 
+				TodoUtil.find(l, keyword);
+				break;
 
 			default:
 				System.out.println("정확한 명령어를 입력하십시오.(도움말 - help)");
@@ -75,5 +80,6 @@ public class TodoMain {
 			
 			if(isList) l.listAll();
 		} while (!quit);
+		TodoUtil.saveList(l, "todolist.txt");
 	}
 }

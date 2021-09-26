@@ -14,6 +14,7 @@ public class Menu {
         System.out.println("7. ls_date ( 날짜순 정렬 )");
         System.out.println("8. save ( 저장 )");
         System.out.println("9. load ( 불러오기 )");
+        System.out.println("10. find ( 검색 )");
         System.out.println("0. exit ( 종료 )");
  
     }

@@ -58,5 +58,9 @@ public class TodoList {
 		}
 		return false;
 	}
+	
+	public int size() {
+		return list.size();
+	}
 
 }
